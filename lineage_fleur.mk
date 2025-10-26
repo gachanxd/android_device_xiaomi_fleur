@@ -11,6 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/fleur/device.mk)
 
+#Ims in specific-device-file(ex. lineage_fleur.mk)
+$(call inherit-product, vendor/mediatek/ims/ims.mk)
+
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
